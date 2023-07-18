@@ -28,7 +28,7 @@ module tb ();
     wire ena;
 
     // instantiate the DUT with lower MAX_COUNT for a faster sim
-    jleugeri_qubo_demon #(.MAX_COUNT(1000)) jleugeri_qubo_demon (
+    tt_um_jleugeri_qubo_demon #(.MAX_COUNT(1000)) tt_um_jleugeri_qubo_demon (
         `ifdef GL_TEST
             .vccd1( 1'b1),
             .vssd1( 1'b0),
